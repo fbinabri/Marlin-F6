@@ -45,7 +45,7 @@
 #define X_MIN_PIN          63
 #define X_MAX_PIN          -1 //64
 #define Y_MIN_PIN          14
-#define Y_MAX_PIN          15
+#define Y_MAX_PIN          -1 //15
 #define Z_MIN_PIN          12
 #define Z_MAX_PIN          9
 
@@ -126,15 +126,15 @@
   /**
   * Software serial
   */
-  #define X_SERIAL_RX_PIN       -1 //71
+  #define X_SERIAL_RX_PIN       71 //71
   #define X_SERIAL_TX_PIN       72
-  #define Y_SERIAL_RX_PIN       -1 //73
+  #define Y_SERIAL_RX_PIN       73 //73
   #define Y_SERIAL_TX_PIN       75
   #define Z_SERIAL_RX_PIN       -1 //78
-  #define Z_SERIAL_TX_PIN       79
-  #define E0_SERIAL_RX_PIN      -1 //76
+  #define Z_SERIAL_TX_PIN       -1 //79
+  #define E0_SERIAL_RX_PIN      76 //76
   #define E0_SERIAL_TX_PIN      77
-  #define E1_SERIAL_RX_PIN      -1 //80
+  #define E1_SERIAL_RX_PIN      80 //80
   #define E1_SERIAL_TX_PIN      81
   #define E2_SERIAL_RX_PIN      -1 //22
   #define E2_SERIAL_TX_PIN      83 
@@ -188,7 +188,8 @@
 #endif
 
 // define digital pin 10 for the filament runout sensor. Use the digital input 10 on the servos connector
-#define FIL_RUNOUT_PIN      10
+#define FIL_RUNOUT_PIN      15 //10
+#define FIL_RUNOUT2_PIN     64
 
 // define digital pin 11 for the PS_ON control. Use the digital input 11 on the servos connector
 #ifndef PS_ON_PIN
